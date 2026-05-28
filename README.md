@@ -5,6 +5,7 @@ dodging obstacles, and collecting spray cans to rack up your score.
 
 Built step by step in Unity using C#.
 
+AI chat link: https://claude.ai/share/8c24f659-7623-429f-baa1-6c5b071d2ec5
 ## Features (planned)
 - Smooth platformer movement with run & jump mechanics
 - Pixel art city environment with rooftops, streets and alleys
