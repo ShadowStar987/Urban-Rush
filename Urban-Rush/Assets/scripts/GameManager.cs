@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
     // The position where the player respawns when they die
     public Vector3 respawnPoint;
 
+    // The player's current score
+    public int score = 0;
+
     void Awake()
     {
         // Make sure there is only one GameManager at all times
@@ -19,5 +22,12 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    // Call this to add points to the score
+    public void AddScore(int amount)
+    {
+        score += amount;
+        Debug.Log("Score: " + score);
     }
 }
