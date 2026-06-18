@@ -8,8 +8,9 @@ public class Hazard : MonoBehaviour
         // Check if the thing that touched it is the player
         if (other.CompareTag("Player"))
         {
-            // Respawn the player at the start position
-            other.transform.position = GameManager.instance.respawnPoint;
+            // Tell the GameManager the player lost a life
+            // (the GameManager handles respawning and game over)
+            GameManager.instance.LoseLife();
         }
     }
 }
